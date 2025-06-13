@@ -1,5 +1,5 @@
-// HIGHTOUCH EVENTS APP.JS FILE –– LAST UPDATED: 4/10/2025 AT 9:29 AM PT //
-// VERSION 3.4
+// HIGHTOUCH EVENTS APP.JS FILE –– LAST UPDATED: 6/13/2025 AT 10:26 AM PT //
+// VERSION 4.2
 
 // Enable debugging in development mode
 window.htevents.debug(false);
@@ -476,17 +476,29 @@ trackPageView();
 
     // Set of events to ignore
     const IGNORED_EVENTS = new Set([
-        'gtm.js',
-        'gtm.dom',
-        'gtm.load',
-        'gtm.linkClick',
-        'gtm.click',
-        'gtm.init',
-        'gtm.init_consent',
-        'consent_initialization',
-        'optimize.callback',
-        'optimize.activate',
-        'userTiming'
+      'gtm.js',
+      'gtm.dom',
+      'gtm.load',
+      'gtm.init',
+      'gtm.init_consent',
+      'gtm.beforeConsent',
+      'gtm.afterConsent',
+      'gtm.consentUpdate',
+      'gtm.linkClick',
+      'gtm.click',
+      'gtm.historyChange',
+      'gtm.scrollDepth',
+      'gtm.timer',
+      'gtm.formSubmit',
+      'gtm.triggerGroup',
+      'gtm.visibility',
+      'userTiming',
+      'optimize.activate',
+      'optimize.callback',
+      'consent_initialization',
+      'config',
+      'gaInitialization',
+      'firebase_screen_view'
     ]);
 
     // Helper: Send each event to Hightouch
