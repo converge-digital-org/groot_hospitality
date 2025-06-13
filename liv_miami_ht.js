@@ -523,6 +523,7 @@ trackPageView();
             properties,
             {
                 source: 'dataLayer',
+                venue: 'LIV Nightclub Miami Beach',
                 ...context
             },
             function () {
